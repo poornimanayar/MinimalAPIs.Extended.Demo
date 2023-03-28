@@ -1,0 +1,41 @@
+GET https://localhost:3456/events/78
+###
+
+GET https://localhost:3456/events/56?api-version=2
+###
+
+GET https://localhost:3456/events/56?api-version=1
+###
+
+
+GET https://localhost:3456/events/filterbyid?ids=5&ids=9
+api-key:"myapikey"
+###
+
+GET https://localhost:3456/events/eventcodesearch?code=EVTPL2&api-version=2
+api-key:"apikey2"
+###
+
+GET https://localhost:3456/events/filterbyid?ids=5&ids=9
+api-key:"apikey2"
+###
+
+GET https://localhost:3456/events/filterbyid?ids=5&ids=9
+api-key:"myapikey"
+api-version:1
+###
+
+GET https://localhost:3456/events/eventcodesearch?code=EVTPL2&api-version=1
+api-key:"apikey2"
+api-version:1
+###
+
+
+GET https://localhost:3456/events/56
+api-key:"apikey2"
+###
+
+GET https://localhost:3456/events/56
+api-key:"apikey1"
+###
+
